@@ -1,0 +1,81 @@
+Team 73
+Sherry Wang
+Yingke Wang
+
+
+
+
+
+Final Grade: 88
+
+-------------------
+-------------------
+
+
+
+A.	Web App Grade: 47
+---------------------
+
+1-	Report: 25
+A fairly reasonable comparison between alternative technologies for web development. The report almost addresses all the expectations of the assignment.
+
+
+ 
+2-	Application:
+
+- Final Web Page:  10
+We app is deployed on Heroku.
+
+
+
+
+- Unit Test: 4
+Some unit tests included.
+
+- Instructions on how to reproduce: 3
+Reasonable information about how to work with the project as a developer.
+More details about how to set up and run the project. What to install form where which version..
+
+
+ 
+  
+3-	Pipeline (bonus): 5
+It seems that CircleCI is set up and used in the project.
+
+
+
+
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+
+
+B.	Mobile App Grade: 41 
+-------------------------
+1-	Report: 23
+
+A fairly reasonable comparison between alternative technologies for mobile development. The report almost addresses all the expectations of the assignment.
+The comparison criteria needs to be technical and further elaborated, pros and cons of each farmework analyzed.
+
+
+ 
+2-	Application: 
+
+- Final APK: 10
+Final APK released.
+
+
+
+
+
+- Unit Test:  3
+Some unit tests included.
+
+
+- Instructions on how to reproduce: 5
+Reasonable information about how to work with the project as a developer.
+
+
+
+3-	Pipeline (bonus): 0
+CircleCI is not set up and used in the repository.

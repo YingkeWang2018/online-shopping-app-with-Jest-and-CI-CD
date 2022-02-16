@@ -1,0 +1,354 @@
+/* Global Styles  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 9px 22px;
+  border: none;
+  outline: none;
+  background: #f9f9f9;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Hero Styles  */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgb(57, 233, 212) 50%
+  );
+  display: flex;
+  position: relative;
+}
+
+/* Nav Styles */
+
+nav {
+  display: none;
+}
+
+/* Card Styles */
+
+.cardContainer {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: fit-content;
+  margin: 16px 0;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  box-shadow: 1px 2px 14px 1px #130506;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.cardBg {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.cardBg img {
+  margin: auto;
+  width: 180px;
+  display: block;
+  transition: transform 900ms;
+}
+
+.cardBg img:hover {
+  transform: scale(1.2);
+}
+
+.cardInfo {
+  background: rgb(57, 233, 212);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardInfo p {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+/* Shopping Cart */
+
+.shoppingCartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.shoppingCart {
+  width: 440px;
+  padding: 24px 0;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  overflow: auto;
+  background: linear-gradient(
+    135deg,
+    rgb(57, 233, 212) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 2px 30px 1px #130506;
+}
+
+.shoppingCart::-webkit-scrollbar {
+  width: 0;
+}
+
+
+
+.shoppingCart .cardRow {
+  width: calc(80% - 14px);
+  margin: 0 0 12px 6px;
+  box-shadow: 1px 2px 30px 1px #130506;
+  background: #f9f9f9;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.shoppingCart .cardRow .cardImg {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: relative;
+}
+
+.shoppingCart .cardRow .cardImg p {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.shoppingCart .cardRow .cardImg img {
+  margin: auto;
+  width: 160px;
+  display: block;
+  transition: transform 900ms;
+}
+
+.shoppingCart .cardRow .cardImg img:hover {
+  transform: scale(1.2);
+}
+
+.shoppingCart .cardRow .cardPrice {
+  background: rgb(57, 233, 212);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  justify-content: space-between;
+}
+
+.shoppingCart .cardRow .cardPrice p {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.shoppingCart .cardRow .cardPrice i {
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.shoppingCartPrice, .couponContainer {
+  width: 440px;
+  height: 60px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 2px 14px 1px #130506;
+  border-radius: 10px 10px 10px 10px;
+}
+.shoppingCartContainer button {
+  max-width: 20%;
+  background-color: rgb(57, 233, 212);
+  color: #f9f9f9;
+  align-items: center;
+  padding: 2px 2px 2px 2px;
+  border-radius: 4px;
+  box-shadow: 0 4px #999;
+}
+.couponContainer input {
+  border-width:0 0 1px 0;
+  font-size: larger;
+  color: rgb(57, 233, 212);
+  height:50%;
+  font-weight: bold;
+  font-family: Courgette, serif;}
+.couponContainer input:focus {
+  outline: none;
+
+}
+.couponContainer button {
+  height: 50%;
+  padding: 0 5px 0 5px;
+}
+.couponContainer input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(57, 233, 212);
+  font-family: Courgette, serif;
+
+}
+.shoppingCartPrice button:active, .couponContainer button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0;
+
+}
+.shoppingCartPrice h2 {
+  margin: 12px 0 0 0;
+  color: rgb(57, 233, 212);
+}
+
+.shoppingCartPrice .allCartItems {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.shoppingCartPrice .allCartItems .itemsAmountWrap {
+  width: 40px;
+  height: 28px;
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.shoppingCartPrice .allCartItems .itemsAmountWrap p {
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(57, 233, 212);
+}
+
+/* Media Queries */
+
+
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 94%;
+  }
+  .hero {
+    padding: 90px 0 24px 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 50%,
+      rgb(57, 233, 212) 50%
+    );
+  }
+  nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    background: rgb(57, 233, 212);
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .container h2 {
+    color: #fff;
+    letter-spacing: 1.2px;
+  }
+  nav .container .menuWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  nav .container .menuWrapper i {
+    color: #fff;
+  }
+  nav .container .menuWrapper p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+  .shoppingCartContainer {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: -700px;
+    height: 90vh;
+    justify-content: flex-start;
+    opacity: 0;
+    transition: all 700ms ease;
+  }
+  .shoppingCartContainer.hidden {
+    left: 0;
+    opacity: 1;
+  }
+  .shoppingCart {
+    height: 66%;
+    width: 400px;
+    min-height: 76%;
+
+  }
+  .shoppingCart .cardRow {
+    width: calc(100% - 62px);
+  }
+  .couponContainer {
+    height: 12%;
+    min-height: 12%;
+    width: 400px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .shoppingCartPrice {
+    height: 12%;
+    min-height: 12%;
+    width: 400px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
